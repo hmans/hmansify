@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+raise "gime a file!!" unless ARGV[0]
+
+require 'rubygems'
+#e.g. rdiscount, gem install rdiscount (or any other bluecloth flavour...)
+require 'markdown' 
+
+text = Markdown.new(File.read(ARGV[0])).to_html
+File.open('/tmp/markdown.html','w'){|f| f.puts text}
+
+system "open /tmp/markdown.html"
