@@ -25,4 +25,3 @@ export EVENT_NOKQUEUE=1
 export ARCHFLAGS="-arch x86_64"
 
 # done!
-echo "hmansified."
