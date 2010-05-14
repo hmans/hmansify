@@ -24,4 +24,7 @@ export EVENT_NOKQUEUE=1
 # mysql gem wants this
 export ARCHFLAGS="-arch x86_64"
 
+# edit stuff in textmate
+export EDITOR="/usr/local/bin/mate -w"
+
 # done!
