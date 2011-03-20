@@ -11,6 +11,9 @@ fi
 # add hmansify bin directory to path
 export PATH=~/hmansify/bin:$PATH
 
+# add homebrew bin path
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
 # awesome git-enabled prompt
 function parse_git_branch {
   ref=$(git-symbolic-ref HEAD 2> /dev/null) || return
