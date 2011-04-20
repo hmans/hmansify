@@ -30,4 +30,7 @@ export ARCHFLAGS="-arch x86_64"
 # edit stuff in textmate
 export EDITOR="/usr/local/bin/mate -w"
 
+# rvm!
+[[ -s "/Users/hmans/.rvm/scripts/rvm" ]] && source "/Users/hmans/.rvm/scripts/rvm"
+
 # done!
