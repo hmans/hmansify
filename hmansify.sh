@@ -3,6 +3,17 @@
 # colored ls output
 alias ls="ls -G"
 
+# edit a bundled gem
+function mategem {
+  gemlocation=`bundle show $1`
+  if [ -d "$gemlocation" ]; then
+    echo "mate $gemlocation"
+    mate $gemlocation
+  else
+    echo "gem $1 not found in current bundle."
+  fi
+}
+
 # homebrew bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
