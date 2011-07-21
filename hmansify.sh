@@ -3,6 +3,9 @@
 # colored ls output
 alias ls="ls -G"
 
+# bundle exec shortcut
+alias be='bundle exec'
+
 # edit a bundled gem
 function mategem {
   gemlocation=`bundle show $1`
